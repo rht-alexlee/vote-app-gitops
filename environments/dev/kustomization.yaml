@@ -2,3 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - ../../k8s/
+images:
+- digest: sha256:d55306835483a307c899143398e93b2fc415c96257fcf65707903cf1bd61b653
+  name: quay.io/rh-ee-alelee/vote-api
+  newName: quay.io/rh-ee-alelee/vote-api
